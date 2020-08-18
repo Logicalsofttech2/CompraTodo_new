@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".customer.fragment.Home2Fragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:orientation="vertical">
+
+            <!--        Start sliser-->
+
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180sdp" />
+
+            <com.daimajia.slider.library.Indicators.PagerIndicator
+                android:id="@+id/custom_indicator"
+                style="@style/AndroidImageSlider_Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:gravity="center" />
+
+
+            <!--     <com.daimajia.slider.library.Indicators.PagerIndicator
+                     android:id="@+id/custom_indicator"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentBottom="true"
+                     android:layout_centerHorizontal="true"
+                     app:selected_color="@color/black"
+                     app:unselected_color="@color/light_gray"
+                     android:gravity="bottom"
+                     android:padding="@dimen/_10sdp"
+                     />-->
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:gravity="bottom"
+                android:padding="10dip"
+                app:centered="true"
+                app:fillColor="@color/red"
+                app:pageColor="#fff"
+                app:snap="false" />
+
+            <!--         end Slider-->
+
+
+            <LinearLayout
+                android:id="@+id/Login_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:background="@color/white"
+                android:padding="@dimen/_15sdp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:background="@drawable/green_round_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="@string/sign_up"
+                    android:padding="@dimen/_7sdp"
+                    android:id="@+id/Signup_page"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:background="@drawable/green_round_corner"
+                    android:padding="@dimen/_7sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:id="@+id/Login_page"
+                    android:text="@string/login"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_15sdp"
+                    android:weightSum="1">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:text="@string/nearby"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/viewmore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight=".7"
+                        android:background="@drawable/categorybackground"
+                        android:drawableRight="@drawable/ic_baseline_arrow_right"
+                        android:drawablePadding="@dimen/_5sdp"
+
+                        android:gravity="right"
+                        android:paddingLeft="@dimen/_7sdp"
+                        android:paddingTop="@dimen/_7sdp"
+                        android:paddingRight="@dimen/_7sdp"
+                        android:paddingBottom="@dimen/_7sdp"
+                        android:text="View All"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvNearByProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:id="@+id/Login_linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:background="@color/white"
+                android:padding="@dimen/_15sdp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:background="@drawable/categorybackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:text="@string/sign_up"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/sale"
+                    android:layout_marginRight="@dimen/_20sdp"
+                   />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:padding="@dimen/_7sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="@string/Gotoneetosell"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+                    <TextView
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:padding="@dimen/_7sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:text="@string/getitinfront"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/_15sdp">
+
+                <TextView
+                    android:id="@+id/catogeries"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/categorybackground"
+                    android:drawableLeft="@drawable/ic_menu"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_7sdp"
+                    android:paddingRight="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_7sdp"
+                    android:text="@string/view_all_category"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_250sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_15sdp"
+                    android:weightSum="1">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:text="@string/newarrival"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvViewAllNewArrival"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight=".7"
+                        android:background="@drawable/categorybackground"
+                        android:drawableRight="@drawable/ic_baseline_arrow_right"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:gravity="right"
+                        android:paddingLeft="@dimen/_7sdp"
+                        android:paddingTop="@dimen/_7sdp"
+                        android:paddingRight="@dimen/_7sdp"
+                        android:paddingBottom="@dimen/_7sdp"
+                        android:text="View All"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvNewArrival"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</LinearLayout>
+

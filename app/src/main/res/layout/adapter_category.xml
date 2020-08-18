@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/rlCat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civCateImage"
+                    android:layout_width="@dimen/_90dp"
+                    android:layout_height="@dimen/_90dp"
+                    android:src="@drawable/fassion"
+                    app:civ_border_color="@color/gray"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:civ_circle_background_color="@color/white"
+                    app:civ_border_width="@dimen/_1sdp"/>
+
+                <TextView
+                    android:id="@+id/tvCateName"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fashion"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</layout>
+

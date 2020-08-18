@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".customer.activity.CatlogActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".8"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:text="@string/business_address"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tvChangeAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/gray_corner"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/change_address"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Address: 201, B.N House, EC-52, near Bombay Hospital, Scheme 94, Indore, Madhya Pradesh 452010" />
+
+
+                    <FrameLayout
+                        android:visibility="gone"
+                        android:id="@+id/map_frame"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_50sdp">
+
+                        <fragment
+                            android:id="@+id/map"
+                            android:name="com.google.android.gms.maps.SupportMapFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_200sdp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/select_businesscategory"
+                    android:textSize="16dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:weightSum="1"
+                    android:background="@drawable/blackcorner"
+                    android:orientation="horizontal">
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_background"
+                        android:focusable="true"
+                        android:imeOptions="actionNext"
+                        android:drawSelectorOnTop="true"
+                        android:spinnerMode="dropdown"
+                        android:isScrollContainer="true"
+                        android:overScrollMode="always"
+                        android:prompt="@string/Category_prompt"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:singleLine="false"
+                        android:windowSoftInputMode="stateAlwaysVisible" />
+
+
+                    <ImageView
+                        android:id="@+id/ivspin"
+                        android:layout_weight="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_keyboard_"
+                        tools:ignore="VectorDrawableCompat" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tvAddItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/ic_newnext"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/add_item"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16sdp" />
+
+          <!--      <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:background="@drawable/currentlocation"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/updatecatlog"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />-->
+
+                <TextView
+                    android:id="@+id/tvAddCatelog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/currentlocation"
+                    android:text="@string/updatecatlog"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+
+
+
+
+                <TextView
+                    android:id="@+id/tvDeleteCatelog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/deletecatlog"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/_16sdp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+</layout>

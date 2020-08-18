@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".login_signup.ChooseRoleActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_header_comment"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        android:padding="10dp"
+        >
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_location"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:foregroundGravity="center"-->
+        <!--            android:gravity="center"-->
+        <!--            android:layout_marginTop="@dimen/_5sdp"-->
+        <!--            android:layout_marginLeft="@dimen/_100sdp"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="@dimen/_16sdp"-->
+        <!--            android:drawablePadding="@dimen/_10sdp"-->
+        <!--            android:text="Select Your type" />-->
+
+
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_baseline_clear"
+            tools:ignore="VectorDrawableCompat" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--           <ImageView-->
+            <!--               android:layout_gravity="center"-->
+            <!--               android:layout_width="match_parent"-->
+            <!--               android:layout_height="@dimen/_100sdp"-->
+            <!--               android:src="@drawable/logo1"/>-->
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="@dimen/_28sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="Welcome to"/>
+
+            <TextView
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20sdp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMPRATODO"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:background="@color/colorPrimary"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_2sdp"/>
+
+
+       <!-- <LinearLayout
+            android:layout_margin="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Which one are you ?"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20sdp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+
+
+        </LinearLayout>-->
+
+
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:weightSum="2"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    app:cardCornerRadius="@dimen/_80sdp"
+                    android:id="@+id/buyer"
+
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="@dimen/_5sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/_145sdp"
+                        android:layout_height="@dimen/_145sdp"
+                        app:cardCornerRadius="@dimen/_80sdp"
+                        app:cardUseCompatPadding="true"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <ImageView
+                            android:layout_margin="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_teen"/>
+
+
+                    </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18sdp"
+
+                    android:text="Buyer"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    app:cardCornerRadius="@dimen/_80sdp"
+                    android:id="@+id/seller"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="@dimen/_5sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/_145sdp"
+                        android:layout_height="@dimen/_145sdp"
+                        app:cardCornerRadius="@dimen/_80sdp"
+                        app:cardUseCompatPadding="true"
+                        app:cardElevation="@dimen/_5sdp">
+
+                    <ImageView
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baker"/>
+
+
+                </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18sdp"
+
+                    android:text="Seller"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/btn_next"
+            android:layout_margin="@dimen/_30sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:text="Next"
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/currentlocation"/>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ui.loginsignup.BankDetailsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_margin="@dimen/_1sdp"
+            android:id="@+id/card_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/_10sdp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:windowSoftInputMode="stateAlwaysVisible"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:singleLine="false"
+                    android:isScrollContainer="true"
+                    android:focusable="true"
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/gray_corner"
+                    android:drawableLeft="@drawable/ic_baseline_bank"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:hint="@string/account_no"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/_10sdp" />
+
+
+                <EditText
+                    android:windowSoftInputMode="stateAlwaysVisible"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:singleLine="false"
+                    android:isScrollContainer="true"
+                    android:focusable="true"
+                    android:id="@+id/et_ifsccode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/gray_corner"
+                    android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:hint="@string/ifsc_code"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/_10sdp" />
+
+                <EditText
+                    android:windowSoftInputMode="stateAlwaysVisible"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:singleLine="false"
+                    android:isScrollContainer="true"
+                    android:focusable="true"
+                    android:id="@+id/et_bankname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/gray_corner"
+                    android:drawableLeft="@drawable/ic_baseline_assignment"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:hint="@string/ifsc_code"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/_10sdp" />
+
+
+                <EditText
+                    android:windowSoftInputMode="stateAlwaysVisible"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:singleLine="false"
+                    android:isScrollContainer="true"
+                    android:focusable="true"
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/gray_corner"
+                    android:drawableLeft="@drawable/ic_person"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:hint="@string/card_holder_name"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/btn_next"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold"
+                    android:background="@drawable/currentlocation"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/next"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

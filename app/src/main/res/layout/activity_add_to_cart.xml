@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout >
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".customer.activity.AddToCartActivity">
+
+    <RelativeLayout
+        app:popupTheme="@style/CustomActionBarTheme"
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="Cart"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_60sdp"
+        android:paddingBottom="@dimen/_50sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:orientation="vertical">
+
+
+               <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/RVAddCart"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/Linear_DataNotFound"
+                    android:layout_marginTop="@dimen/_70sdp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:src="@drawable/emptycard2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:padding="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:text="Your Card is Empty !"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal" />
+
+
+                    <TextView
+                        android:id="@+id/strtshopping"
+                        android:background="@drawable/greenbackground"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:text="Start Shoping"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal" />
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_margin="@dimen/_10sdp"
+            android:id="@+id/tv_order"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:background="@drawable/greenbackground"
+            android:gravity="center"
+            android:text="Place Order"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+    </RelativeLayout>
+
+</RelativeLayout>
+</layout>

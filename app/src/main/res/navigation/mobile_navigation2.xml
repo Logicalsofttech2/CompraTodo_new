@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/nav_home2">
+
+    <fragment
+        android:id="@+id/nav_home2"
+        android:name="com.logicals.compratodo.customer.fragment.Home2Fragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home2" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.logicals.compratodo.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_orders"
+        android:name="com.logicals.compratodo.customer.UI.myorders.MyorderFragment"
+        android:label="@string/menu_orders"
+        tools:layout="@layout/fragment_myorder" />
+
+
+
+
+    <fragment
+        android:id="@+id/nav_completeorders"
+        android:name="com.logicals.compratodo.customer.UI.completeorders.CompleteOrderListFragment"
+        android:label="@string/complte_orders"
+        tools:layout="@layout/fragment_complete_order_list" />
+
+
+
+
+    <fragment
+        android:id="@+id/nav_offers"
+        android:name="com.logicals.compratodo.customer.UI.offers.MyoffersFragment"
+        android:label="@string/menu_offers"
+        tools:layout="@layout/fragment_myoffers" />
+
+    <fragment
+        android:id="@+id/nav_wishlist"
+        android:name="com.logicals.compratodo.customer.fragment.MywishlistFragment"
+        android:label="@string/menu_wishlist"
+        tools:layout="@layout/fragment_mywishlist" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.logicals.compratodo.customer.UI.about.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+
+
+    <fragment
+        android:id="@+id/nav_terms"
+        android:name="com.logicals.compratodo.customer.UI.terms.TermsFragment"
+        android:label="@string/menu_terms"
+        tools:layout="@layout/fragment_terms" />
+
+
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.logicals.compratodo.customer.UI.help.HelpFragment"
+        android:label="@string/menu_help"
+        tools:layout="@layout/fragment_help" />
+
+
+
+
+</navigation>

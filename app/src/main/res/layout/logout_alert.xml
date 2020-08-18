@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_20sdp"
+    android:layout_height="wrap_content" >
+
+   <TextView
+        android:text="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+
+        android:layout_marginTop="@dimen/_10sdp"
+        />
+    <TextView
+        android:id="@+id/dynamic_msg"
+        android:text="Do You Want To Logout From This App ?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+
+
+        android:layout_marginTop="@dimen/_10sdp"
+        />
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_weight="0.5"
+            android:id="@+id/dialogButtonCancel"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:text=" cancel "
+            android:textColor="@color/white"
+            android:background="@drawable/greenbackground"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            />
+
+        <Button
+            android:layout_weight="0.5"
+
+            android:id="@+id/dialogButtonOK"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:text=" Ok "
+            android:textColor="@color/white"
+            android:background="@drawable/greenbackground"
+            android:layout_marginTop="30dp"
+
+            android:layout_marginLeft="@dimen/_20sdp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

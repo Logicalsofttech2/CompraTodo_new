@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1010806274730",
+    "firebase_url": "https://compratodo-ff772.firebaseio.com",
+    "project_id": "compratodo-ff772",
+    "storage_bucket": "compratodo-ff772.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010806274730:android:dd4ed64ee4e5da8038eed3",
+        "android_client_info": {
+          "package_name": "com.logicals.compratodo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010806274730-j8ghe18rucgkq6v7rfcq7rdng4fges7v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.logicals.compratodo",
+            "certificate_hash": "99e3472d36febd533ef32388789302e3b28c36e7"
+          }
+        },
+        {
+          "client_id": "1010806274730-fbh07l8v9kngurhpa791ei4oh72pj7r2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJdqRhgXrvdfNAVNbcdPIjbCsB5r1rqw0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010806274730-fbh07l8v9kngurhpa791ei4oh72pj7r2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

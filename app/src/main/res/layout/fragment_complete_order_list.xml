@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".customer.UI.completeorders.CompleteOrderListFragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recycleview"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_height="wrap_content"/>
+
+
+</FrameLayout>
+</layout>

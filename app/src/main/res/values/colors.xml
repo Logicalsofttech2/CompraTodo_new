@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+<color name="colorlightgreen">#4ff900</color>
+
+<!--
+
+    <color name="colorPrimary">#08D941</color>
+    <color name="colorPrimaryDark">#752F2E2E</color>
+    <color name="colorAccent">#4ff900</color>
+-->
+
+    <color name="colorLine">#dfdfdf</color>
+    <color name="colorPrimary">#02B533</color>
+    <color name="colorPrimaryDark">#752F2E2E</color>
+    <color name="colorAccent">#08D941</color>
+    <color name="lightred">#fdf0f2</color>
+    <color name="lightprimery"> #effcf4</color>
+    <color name="yellow">#f7b833</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#2f2e2e</color>
+    <color name="light_gray">#949393</color>
+    <color name="light_gray1">#3A3A3A</color>
+    <color name="gray">#F3F2F2</color>
+    <color name="green">#08D941</color>
+    <color name="blue">#F8034855</color>
+    <color name="transparent">#A6000000</color>
+    <color name="light_white">#F1F0F0</color>
+    <color name="light_black">#F34E4D4D</color>
+    <color name="red">#E60202</color>
+    <color name="rama_color">#0BE4D3</color>
+    <color name="purple">#673AB7</color>
+    <color name="purple2">#3AB3B7</color>
+    <color name="orange">#16E40808</color>
+    <color name="blacktransparent">#CD2F2E2E</color>
+    <color name="lightgreen">#e4f8f6</color>
+
+    <color name="transparentblack">#6A2F2E2E</color>
+    <color name="transparentfull">#002F2E2E</color>
+
+    <color name="light_transparent">#dddddd</color>
+
+
+    <color name="placeholder_bg">#dddddd</color>
+    <color name="item_name">#0c0c0c</color>
+    <color name="description">#1a1a1a</color>
+    <color name="chef">#777</color>
+    <color name="timestamp">#777</color>
+
+
+
+
+
+
+</resources>

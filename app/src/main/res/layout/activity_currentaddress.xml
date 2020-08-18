@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".customer.activity.CurrentaddressActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_header_comment"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            android:drawablePadding="@dimen/_10sdp"
+            android:text="Chose Location" />
+
+
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_back"
+            />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <fragment
+                        android:layout_gravity="center"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:id="@+id/frg"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_300sdp"/>
+
+
+                </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                android:id="@+id/placeorder"
+                android:layout_margin="@dimen/_10sdp"
+                android:textAlignment="center"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/pricebackground"
+                android:text="Deliver to my current location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/saveaddress"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:textAlignment="center"
+                    android:padding="@dimen/_10sdp"
+                    android:background="@drawable/pricebackground"
+                    android:text="Deliver to Save Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/addaddress"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:textAlignment="center"
+                    android:padding="@dimen/_10sdp"
+                    android:background="@drawable/pricebackground"
+                    android:text="Add new Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

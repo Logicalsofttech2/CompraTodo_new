@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.logicals.compratodo">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor.compass"
+        android:required="true" />
+
+    <application
+        android:name=".utils.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".vendor.ui.home.VendorSearchActivity"></activity>
+        <activity android:name=".vendor.ui.orderhistory.StatusActivity" />
+        <activity android:name=".vendor.ui.profile.VendorChangePassword" />
+        <activity android:name=".customer.activity.NotificationActivity" />
+        <activity android:name=".customer.activity.SnglPdPaymentActivity" />
+        <activity android:name=".customer.activity.REPaymentActivity" />
+        <activity android:name=".customer.activity.ViewAllRatingActivity" />
+        <activity android:name=".customer.activity.RelatedProductsActivity" />
+        <activity android:name=".login_signup.VendorSignupActivity" />
+        <activity android:name=".login_signup.CustomerSignupActivity" />
+        <activity
+            android:name=".login_signup.CustomerLoginActivity"
+            android:fitsSystemWindows="true"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".login_signup.VendorLoginActivity" />
+        <activity android:name=".login_signup.ChooseRoleActivity" />
+        <activity android:name=".vendor.activity.CraeteCatlogActivity" />
+        <activity android:name=".customer.UI.home.ViewAllNewArrival" />
+        <activity android:name=".customer.UI.home.ViewAllNearProduct" />
+        <activity android:name=".vendor.ui.profile.ChangePassword" />
+        <activity android:name=".ui.loginsignup.ForgetPassword" />
+        <activity android:name=".customer.activity.CatlogActivity" />
+        <activity android:name=".vendor.ui.profile.Vendorprofiledetails" />
+        <activity android:name=".profile.UpdateProfile" />
+        <activity android:name=".vendor.ui.uploadproduct.UploadProductActivity" />
+        <activity android:name=".vendor.activity.VendorHome" />
+        <activity android:name=".ui.loginsignup.OtpverificationActivity" />
+        <activity android:name=".customer.activity.PaymentActivity" />
+        <activity android:name=".customer.activity.PlaceorderActivity" />
+        <activity android:name=".customer.activity.AddAddressActivity" />
+        <activity android:name=".customer.activity.AddresslistActivity" />
+        <activity android:name=".customer.UI.myorders.OrderDetailsActivity" />
+        <activity android:name=".customer.activity.FilterActivity" />
+        <activity android:name=".customer.activity.ProductListActivity" />
+        <activity android:name=".customer.activity.SubcategortlistActivity" />
+        <activity android:name=".customer.activity.SubcatActivity" />
+        <activity android:name=".customer.activity.CategoriesListActivity" />
+        <activity android:name=".customer.activity.ZoomImageActivity" />
+        <activity android:name=".customer.activity.ProductDetailsActivity" />
+        <activity android:name=".customer.activity.SearchActivity" />
+        <activity android:name=".customer.activity.CurrentaddressActivity" />
+        <activity android:name=".customer.activity.AddToCartActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".customer.mainhomeactivity.UserHomeActivity"
+            android:label="@string/title_activity_user_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".customer.activity.MainActivity" />
+        <activity android:name=".customer.activity.ConfirmationActivity" />
+        <activity android:name=".login_signup.CommonSignupActivity" />
+        <activity android:name=".login_signup.splashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.loginsignup.TabActivity" />
+        <activity
+            android:name="com.schibstedspain.leku.LocationPickerActivity"
+            android:label="@string/leku_title_activity_location_picker"
+            android:parentActivityName=".customer.activity.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/leku_searchable" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".customer.activity.MainActivity" />
+        </activity>
+        <activity android:name=".customer.UI.home.SearchableListActivity" />
+        <activity
+            android:name=".customer.UI.home.MainActivity2"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/picker_provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBAyfysaS-pyQc_bzhvI5QtCXODsNaZ5X8" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name=".utils.SimpleSearchSuggestionsProvider"
+            android:authorities="com.logicals.compratodo.utils.SimpleSearchSuggestionsProvider" />
+    </application>
+
+</manifest>

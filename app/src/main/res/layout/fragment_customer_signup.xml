@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:context=".ui.loginsignup.CustomerSignupFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/rel_first"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/rl_field"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/card_sign"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="@dimen/_10sdp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:windowSoftInputMode="stateAlwaysVisible"
+                            android:overScrollMode="always"
+                            android:scrollbarStyle="insideInset"
+                            android:scrollbars="vertical"
+                            android:singleLine="false"
+                            android:isScrollContainer="true"
+                            android:focusable="true"
+                            android:id="@+id/et_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/gray_corner"
+                            android:drawableLeft="@drawable/ic_person"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:hint="@string/name"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:padding="@dimen/_10sdp" />
+
+                        <EditText
+                            android:windowSoftInputMode="stateAlwaysVisible"
+                            android:overScrollMode="always"
+                            android:scrollbarStyle="insideInset"
+                            android:scrollbars="vertical"
+                            android:singleLine="false"
+                            android:isScrollContainer="true"
+                            android:focusable="true"
+                            android:id="@+id/et_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/gray_corner"
+                            android:drawableLeft="@drawable/ic_mail"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:hint="@string/emailid"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:padding="@dimen/_10sdp" />
+
+
+                        <EditText
+                            android:windowSoftInputMode="stateAlwaysVisible"
+                            android:overScrollMode="always"
+                            android:scrollbarStyle="insideInset"
+                            android:scrollbars="vertical"
+                            android:singleLine="false"
+                            android:isScrollContainer="true"
+                            android:focusable="true"
+                            android:id="@+id/et_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/gray_corner"
+                            android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:hint="@string/password"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPassword"
+                            android:padding="@dimen/_10sdp" />
+                        <EditText
+                            android:windowSoftInputMode="stateAlwaysVisible"
+                            android:overScrollMode="always"
+                            android:scrollbarStyle="insideInset"
+                            android:scrollbars="vertical"
+                            android:singleLine="false"
+                            android:isScrollContainer="true"
+                            android:focusable="true"
+                            android:id="@+id/et_cnfpassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/gray_corner"
+                            android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:hint="@string/cnfpassword"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPassword"
+                            android:padding="@dimen/_10sdp" />
+
+                        <EditText
+                            android:windowSoftInputMode="stateAlwaysVisible"
+                            android:overScrollMode="always"
+                            android:scrollbarStyle="insideInset"
+                            android:scrollbars="vertical"
+                            android:singleLine="false"
+                            android:isScrollContainer="true"
+                            android:focusable="true"
+                            android:id="@+id/et_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/gray_corner"
+                            android:drawableLeft="@drawable/ic_phone"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:hint="@string/phoneno"
+                            android:imeOptions="actionGo"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:padding="@dimen/_10sdp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/ch_terms"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/tv_terms"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:text="@string/i_agree"
+                                android:textColor="@color/light_gray" />
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/iv_signUp"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_16sdp"
+                            android:background="@drawable/currentlocation"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/submit"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--                <de.hdodenhof.circleimageview.CircleImageView-->
+            <!--                    android:id="@+id/iv_signUp"-->
+            <!--                    android:layout_width="@dimen/_60sdp"-->
+            <!--                    android:layout_height="@dimen/_60sdp"-->
+            <!--                    android:layout_alignParentBottom="true"-->
+            <!--                    android:layout_centerHorizontal="true"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:layout_margin="@dimen/_5sdp"-->
+            <!--                    android:background="@drawable/ic_next"-->
+            <!--                    android:padding="@dimen/_10sdp"-->
+            <!--                    android:src="@drawable/ic_arrow" />-->
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_field"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/you_have" />
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/login" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>
+
+</layout>

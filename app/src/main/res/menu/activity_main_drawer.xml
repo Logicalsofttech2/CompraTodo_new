@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view2">
+
+<!--    <group android:checkableBehavior="single">-->
+        <item
+            android:id="@+id/nav_home2"
+            android:icon="@drawable/ic_baseline_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_baseline_profile"
+            android:title="@string/menu_profile" />
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_baseline_shopping_cart"
+            android:title="@string/menu_orders" />
+
+
+        <item
+            android:id="@+id/nav_completeorders"
+            android:icon="@drawable/ic_baseline_shopping_cart"
+            android:title="@string/complte_orders" />
+
+        <item
+            android:id="@+id/nav_offers"
+            android:icon="@drawable/ic_baseline_local_offer"
+            android:title="@string/menu_offers" />
+        <item
+            android:id="@+id/nav_wishlist"
+            android:icon="@drawable/ic_baseline_favorite"
+            android:title="@string/menu_wishlist" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_baseline_about"
+            android:title="@string/menu_about" />
+        <item
+            android:id="@+id/nav_invite"
+            android:icon="@drawable/ic_baseline_share"
+            android:title="@string/menu_invite" />
+        <item
+            android:id="@+id/nav_terms"
+            android:icon="@drawable/ic_baseline_about"
+            android:title="@string/menu_terms" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_baseline_support"
+            android:title="@string/menu_help" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_baseline_logout"
+            android:title="@string/menu_logout" />
+<!--    </group>-->
+</menu>

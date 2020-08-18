@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/rlCat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/av_productlist"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="1dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="@dimen/_140sdp">
+
+
+                        <ImageView
+                            android:id="@+id/ivImage"
+                            android:scaleType="centerCrop"
+                            android:layout_width="match_parent"
+                            android:src="@drawable/mobileaccecrise"
+                            android:layout_height="match_parent"/>
+
+                        <RelativeLayout
+                            android:layout_alignParentBottom="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvName"
+                                android:drawableRight="@drawable/ic_next"
+                                android:drawablePadding="@dimen/_10sdp"
+                                android:background="@color/blacktransparent"
+                                android:padding="@dimen/_10sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Cell /Smart Phone"
+                                android:textColor="@color/light_white"
+                                android:textSize="@dimen/_16sdp" />
+
+
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</layout>
+

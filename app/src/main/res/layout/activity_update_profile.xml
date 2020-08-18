@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.UpdateProfile">
+
+
+    <ImageView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/iv_back"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/tvHead"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/_12sdp"
+        android:textSize="@dimen/_16sdp"
+        android:text="@string/update_profile"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="@dimen/_50sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tvHead"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_weight="1"
+        android:id="@+id/civProfilePic"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="@dimen/_2sdp"
+        android:src="@drawable/fassion"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/civProfilePic"
+        tools:layout_editor_absoluteX="10dp">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/gray_corner"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="@dimen/_10sdp"
+            android:focusable="true"
+            android:hint="@string/name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:isScrollContainer="true"
+            android:overScrollMode="always"
+            android:padding="@dimen/_10sdp"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/gray_corner"
+            android:drawableLeft="@drawable/ic_mail"
+            android:drawablePadding="@dimen/_10sdp"
+            android:editable="false"
+            android:focusable="true"
+            android:hint="@string/emailid"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:isScrollContainer="true"
+            android:overScrollMode="always"
+            android:padding="@dimen/_10sdp"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/gray_corner"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="@dimen/_10sdp"
+            android:editable="false"
+            android:focusable="true"
+            android:hint="@string/phoneno"
+            android:imeOptions="actionGo"
+            android:inputType="number"
+            android:isScrollContainer="true"
+            android:maxLength="10"
+            android:overScrollMode="always"
+            android:padding="@dimen/_10sdp"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/et_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/gray_corner"
+            android:drawableLeft="@drawable/ic_baseline_bank"
+            android:drawablePadding="@dimen/_10sdp"
+            android:focusable="true"
+            android:hint="@string/account_no"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:isScrollContainer="true"
+            android:overScrollMode="always"
+            android:padding="@dimen/_10sdp"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llSellertype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/sellertype"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/groupradio"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <!-- In RadioGroup create the 1 Radio Button-->
+                    <!-- like this we will add some more Radio Button-->
+                    <RadioButton
+                        android:id="@+id/Retail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/retail"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <RadioButton
+                        android:id="@+id/Wholesale"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/wholesale"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <RadioButton
+                        android:id="@+id/Farmer"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/farmer"
+                        android:textSize="@dimen/_16sdp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llHealthCertificate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_heathcertificate"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/heathcertificateimg"/>
+
+            <ImageView
+                android:id="@+id/ivHealthCertificate"
+                android:layout_width="@dimen/_70sdp"
+                android:src="@drawable/logo2"
+                android:layout_height="@dimen/_90sdp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPermit"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvPermit"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/permitimg"/>
+
+            <ImageView
+                android:id="@+id/ivPermit"
+                android:layout_width="@dimen/_70sdp"
+                android:src="@drawable/logo2"
+                android:layout_height="@dimen/_90sdp"/>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/currentlocation"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/update"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,123 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.logicals.compratodo"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+     dataBinding {
+          enabled = true
+      }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.1'
+    }
+}
+
+allprojects {
+    repositories {
+
+        maven { url 'https://jitpack.io' }
+    }
+
+    configurations.all {
+        exclude group: 'com.google.guava', module: 'listenablefuture'
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.navigation:navigation-fragment:2.2.1'
+    implementation 'androidx.navigation:navigation-ui:2.2.1'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'me.relex:circleindicator:2.1.4'
+    implementation 'me.relex:circleindicator:1.2.2@aar'
+
+
+
+
+    //slider zoom/smooth
+    implementation 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+    implementation 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
+    implementation "com.android.support:support-v4:+"
+    implementation 'com.squareup.picasso:picasso:2.3.2'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'org.jsoup:jsoup:1.8.1'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.3.+'
+    implementation 'com.github.jrvansuita:PickImage:2.2.4'
+
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'com.nononsenseapps:filepicker:3.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.1.0'
+
+  //  implementation 'com.ethanhua:skeleton:1.1.2'
+   // implementation 'io.supercharge:shimmerlayout:2.1.0'
+
+
+  //  implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.google.firebase:firebase-messaging:20.1.2'
+
+   // implementation ("com.google.android.libraries.places:places-compat:2.2.0")
+    implementation ("com.schibstedspain.android:leku:7.2.0") {
+        exclude group: 'com.google.android.gms'
+        exclude module: "play-services-places"
+    }
+
+
+    //////////////////this is for shimmer
+    implementation 'com.facebook.shimmer:shimmer:0.1.0'
+
+
+
+    implementation 'com.android.volley:volley:1.1.1'
+  //  implementation 'com.google.android.gms:play-services:9.2.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+}
+

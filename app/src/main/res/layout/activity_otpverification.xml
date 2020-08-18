@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    tools:context=".ui.loginsignup.OtpverificationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/rl_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:src="@drawable/logo4"
+                    android:layout_marginBottom="@dimen/_50sdp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tvPleaseType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:text="@string/please_type"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp" />
+
+
+
+                <LinearLayout
+                    android:padding="@dimen/_30sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_field"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/layout_otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_header"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:id="@+id/e1"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:inputType="numberPassword"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:background="@drawable/pricebackground"
+                        android:maxLength="1" />
+
+                        <EditText
+                            android:id="@+id/e2"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:inputType="numberPassword"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:background="@drawable/pricebackground"
+                            android:maxLength="1"/>
+
+                        <EditText
+                            android:id="@+id/e3"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:inputType="numberPassword"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:background="@drawable/pricebackground"
+                            android:maxLength="1"/>
+
+                        <EditText
+                            android:id="@+id/e4"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:inputType="numberPassword"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:background="@drawable/pricebackground"
+                            android:maxLength="1"/>
+
+                        <EditText
+                            android:id="@+id/e5"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:inputType="numberPassword"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:background="@drawable/pricebackground"
+                            android:maxLength="1"/>
+
+
+                    <requestFocus />
+
+
+            </LinearLayout>
+
+
+<!--                    <EditText-->
+<!--                        android:windowSoftInputMode="stateAlwaysVisible"-->
+<!--                        android:overScrollMode="always"-->
+<!--                        android:scrollbarStyle="insideInset"-->
+<!--                        android:scrollbars="vertical"-->
+<!--                        android:singleLine="false"-->
+<!--                        android:isScrollContainer="true"-->
+<!--                        android:focusable="true"-->
+<!--                        android:id="@+id/et_password"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/_10sdp"-->
+<!--                        android:background="@drawable/inputfieldbackground"-->
+<!--                        android:drawableLeft="@drawable/ic_phone"-->
+<!--                        android:drawablePadding="@dimen/_15sdp"-->
+<!--                        android:hint="Enter Your Mobile OTP"-->
+<!--                        android:inputType="textPassword"-->
+<!--                        android:padding="@dimen/_12sdp" />-->
+
+                    <TextView
+                        android:windowSoftInputMode="stateAlwaysVisible"
+                        android:singleLine="false"
+                        android:isScrollContainer="true"
+                        android:focusable="true"
+                        android:id="@+id/et_services"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:background="@drawable/gray_corner"
+                        android:inputType="textEmailAddress"
+                        android:textAlignment="center"
+                        android:text="@string/verify_now"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_20sdp"
+                        android:textColor="@color/red"
+                        android:padding="@dimen/_15sdp"
+                        android:gravity="center_horizontal" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

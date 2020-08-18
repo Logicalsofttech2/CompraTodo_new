@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".vendor.product.ProductFragment">
+
+    <RelativeLayout
+        app:popupTheme="@style/CustomActionBarTheme"
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="My Orders"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:paddingRight="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_search" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:layout_height="1dp"></LinearLayout>
+
+    <LinearLayout
+        android:paddingBottom="@dimen/_50sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_header">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:padding="@dimen/_10sdp"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_weight=".6"
+                        android:padding="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="List Your Products"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:id="@+id/uploadproduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/gray_corner"
+                        android:drawableStart="@drawable/ic_baseline_upload"
+                        android:drawableLeft="@drawable/ic_baseline_upload"
+                        android:gravity="right"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/Upload"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tvDelete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/red_corner"
+                        android:drawableStart="@drawable/ic_baseline_delete_24"
+                        android:drawableLeft="@drawable/ic_baseline_delete_24"
+                        android:gravity="right"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/delete"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>
+</layout>

@@ -1,0 +1,110 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    ////////////////////////////////////////////////////
+    <style name="CustomActionBarTheme"
+        parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="MyActionBar"
+        parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/logo</item>
+        <item name="searchIcon">@drawable/ic_baseline_profile</item>
+    </style>
+
+
+    <style name="CustomRatingBar" parent="@style/Widget.AppCompat.RatingBar.Small">
+        <item name="android:progressDrawable">@drawable/custom_ratingbar_full_filled</item>
+        <item name="android:minHeight">@dimen/_30sdp</item>
+        <item name="android:maxHeight">@dimen/_30sdp</item>
+    </style>
+
+
+<!--
+
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetDialog</item>
+    </style>
+
+-->
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <style name="BottomSheetDialog" parent="Widget.Design.BottomSheet.Modal">
+        <item name="background">@color/blacktransparent</item>
+    </style>
+
+<!--    Create a new style for bottom sheet button-->
+
+    <style name="ActionItem">
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:drawablePadding">@dimen/drawable_padding</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/normal_padding</item>
+    </style>
+
+    <style name="AndroidImageSlider_Indicator">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="shape">oval</item>
+        <item name="padding_left">3dp</item>
+        <item name="padding_right">3dp</item>
+        <item name="padding_top">4dp</item>
+        <item name="padding_bottom">4dp</item>
+        <item name="selected_width">8dp</item>
+        <item name="selected_height">8dp</item>
+        <item name="unselected_width">6dp</item>
+        <item name="unselected_height">6dp</item>
+    </style>
+
+
+
+    <style name="BottomSheet" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottomsheet_dialoge</item>
+    </style>
+
+    <style name="BaseBottomSheetDialog" parent="@style/Theme.Design.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog" />
+
+
+
+</resources>

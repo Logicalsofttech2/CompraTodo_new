@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+
+
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.logicals.compratodo.vendor.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/navigation_vendorProfile"
+            app:popUpTo="@+id/firstFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_vendorProfile"
+        android:name="com.logicals.compratodo.vendor.ui.profile.VendorprofileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_vendorprofile" />
+
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.logicals.compratodo.vendor.ui.orderhistory.OrderHistoryFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_save"
+        android:name="com.logicals.compratodo.vendor.product.ProductFragment"
+        android:label="@string/title_save"
+        tools:layout="@layout/fragment_save" />
+
+
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_search"-->
+<!--        android:name="com.logicalsofttech.kiswa.ui.Search.SearchFragment"-->
+<!--        android:label="@string/title_search"-->
+<!--        tools:layout="@layout/fragment_search" />-->
+
+
+
+</navigation>

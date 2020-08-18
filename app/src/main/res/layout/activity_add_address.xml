@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+
+    <data>
+    <variable
+        name="address"
+        type="com.logicals.compratodo.customer.model.AddressListModel" />
+    </data>
+
+
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".customer.activity.AddAddressActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_header_comment"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_clear" />
+
+        <TextView
+            android:id="@+id/tv_header_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:text="Add Address " />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <LinearLayout
+                android:id="@+id/rel_first"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--            <LinearLayout-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="310dp"-->
+                <!--                android:orientation="vertical">-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="310dp"-->
+                <!--                    android:background="@drawable/login_bg"-->
+                <!--                    android:orientation="vertical" />-->
+                <!--            </LinearLayout>-->
+
+                <LinearLayout
+                    android:id="@+id/rl_field"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/card_sign"
+                            android:layout_margin="@dimen/_1sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="@dimen/_10sdp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:windowSoftInputMode="stateAlwaysVisible"
+                                    android:singleLine="false"
+                                    android:isScrollContainer="true"
+                                    android:focusable="true"
+                                    android:id="@+id/et_state"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:background="@drawable/green_corner"
+                                    android:drawablePadding="@dimen/_10sdp"
+                                    android:hint="State"
+                                    android:text="@{address.state}"
+                                    android:imeOptions="actionGo"
+                                    android:inputType="text"
+                                    android:padding="@dimen/_10sdp" />
+
+                                <EditText
+                                    android:windowSoftInputMode="stateAlwaysVisible"
+                                    android:singleLine="false"
+                                    android:isScrollContainer="true"
+                                    android:focusable="true"
+                                    android:id="@+id/et_city"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:background="@drawable/green_corner"
+                                    android:drawablePadding="@dimen/_10sdp"
+                                    android:hint="City"
+                                    android:text="@{address.city}"
+                                    android:imeOptions="actionGo"
+                                    android:inputType="text"
+                                    android:padding="@dimen/_10sdp" />
+
+
+                                <EditText
+                                    android:windowSoftInputMode="stateAlwaysVisible"
+                                    android:overScrollMode="always"
+                                    android:scrollbarStyle="insideInset"
+                                    android:scrollbars="vertical"
+                                    android:singleLine="false"
+                                    android:isScrollContainer="true"
+                                    android:focusable="true"
+                                    android:id="@+id/et_pincode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:background="@drawable/green_corner"
+                                    android:drawablePadding="@dimen/_10sdp"
+                                    android:hint="Pin Code"
+                                    android:text="@{address.pinCode}"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="number"
+                                    android:padding="@dimen/_10sdp" />
+
+                                <EditText
+                                    android:windowSoftInputMode="stateAlwaysVisible"
+                                    android:singleLine="false"
+                                    android:isScrollContainer="true"
+                                    android:focusable="true"
+                                    android:id="@+id/et_house_no"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:background="@drawable/green_corner"
+                                    android:drawablePadding="@dimen/_10sdp"
+                                    android:hint="Flat / House No / Floor / Building"
+                                    android:text="@{address.houseNo}"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="text"
+                                    android:padding="@dimen/_10sdp" />
+
+
+                                <EditText
+                                    android:text="@{address.area}"
+                                    android:windowSoftInputMode="stateAlwaysVisible"
+                                    android:isScrollContainer="true"
+                                    android:focusable="true"
+                                    android:id="@+id/et_Area"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:background="@drawable/green_corner"
+                                    android:drawablePadding="@dimen/_10sdp"
+                                    android:hint="Area / Street / Locality"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="text"
+                                    android:padding="@dimen/_10sdp" />
+
+                                <EditText
+                                    android:text="@{address.landmark}"
+                                    android:windowSoftInputMode="stateAlwaysVisible"
+                                    android:singleLine="false"
+                                    android:isScrollContainer="true"
+                                    android:focusable="true"
+                                    android:id="@+id/et_landmark"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:background="@drawable/green_corner"
+                                    android:drawablePadding="@dimen/_10sdp"
+                                    android:hint="Landmark"
+                                    android:imeOptions="actionGo"
+                                    android:inputType="text"
+
+                                    android:padding="@dimen/_10sdp" />
+
+                                <EditText
+                                    android:text="@{address.mobile}"
+                                    android:windowSoftInputMode="stateAlwaysVisible"
+                                    android:singleLine="false"
+                                    android:isScrollContainer="true"
+                                    android:focusable="true"
+                                    android:id="@+id/et_Mobile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:background="@drawable/green_corner"
+                                    android:drawablePadding="@dimen/_10sdp"
+                                    android:hint="Mobile Number"
+                                    android:imeOptions="actionGo"
+                                    android:inputType="number"
+                                    android:maxLength="10"
+                                    android:padding="@dimen/_10sdp" />
+
+
+                                <LinearLayout
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10sdp"
+                                    android:orientation="horizontal">
+
+                                    <RadioGroup
+                                        android:weightSum="3"
+                                        android:id="@+id/groupradio"
+                                        android:layout_width="fill_parent"
+                                        android:orientation="horizontal"
+                                        android:layout_height="wrap_content">
+
+                                        <!-- In RadioGroup create the 1 Radio Button-->
+                                        <!-- like this we will add some more Radio Button-->
+                                        <RadioButton
+                                            android:layout_weight="1"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/radia_id1"
+                                            android:text="Home"
+                                            android:textSize="@dimen/_18sdp"/>
+
+                                        <RadioButton
+                                            android:layout_weight="1"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/radia_id2"
+                                            android:text="Office"
+                                            android:textSize="@dimen/_18sdp"/>
+
+                                        <RadioButton
+                                            android:layout_weight="1"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/radia_id3"
+                                            android:text="Other"
+                                            android:textSize="@dimen/_18sdp"/>
+
+                                    </RadioGroup>
+                                </LinearLayout>
+
+
+                                <TextView
+                                    android:layout_marginTop="@dimen/_50sdp"
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/iv_save"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/_10sdp"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/white"
+                                    android:textAlignment="center"
+                                    android:textSize="@dimen/_18sdp"
+                                    android:background="@drawable/greenbackground"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="Save"/>
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+</layout>

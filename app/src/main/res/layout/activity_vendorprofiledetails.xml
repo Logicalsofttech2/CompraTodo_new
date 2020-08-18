@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".vendor.ui.profile.Vendorprofiledetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:background="@color/colorPrimary"
+                android:weightSum="3"
+                android:padding="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    app:civ_border_color="@color/colorPrimary"
+                    app:civ_border_width="@dimen/_2sdp"
+                    android:id="@+id/civProfilePic"
+                    android:src="@drawable/fassion"/>
+
+                <TextView
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvName"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_20sdp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Anju Gupta"/>
+
+                <TextView
+                    android:id="@+id/tvEdit"
+                    android:background="@drawable/gray_corner"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_10sdp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/update"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/blackcorner"
+                android:padding="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvRUC"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="@drawable/blackcorner"
+                    android:padding="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" 84670287"/>
+
+                <TextView
+                    android:id="@+id/tvDNI"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="@drawable/blackcorner"
+                    android:padding="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" 84670287"/>
+
+
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="@drawable/blackcorner"
+                    android:padding="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone No : 8467028766"/>
+
+                <TextView
+                    android:id="@+id/tvAccount"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="@drawable/blackcorner"
+                    android:padding="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Account No :SBI7564756"/>
+
+                <TextView
+                    android:id="@+id/tvAccountType"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="@drawable/blackcorner"
+                    android:padding="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Account No :SBI7564756"/>
+
+
+                <LinearLayout
+                    android:id="@+id/llHealthCertificate"
+                    android:padding="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <TextView
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Health Certificate"/>
+
+                    <ImageView
+                        android:id="@+id/ivHealthCertificate"
+                        android:layout_width="@dimen/_70sdp"
+                        android:src="@drawable/logo2"
+                        android:layout_height="@dimen/_90sdp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:id="@+id/llPermit"
+                    android:padding="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Permit"/>
+
+                    <ImageView
+                        android:id="@+id/ivPermit"
+                        android:layout_width="@dimen/_70sdp"
+                        android:src="@drawable/logo2"
+                        android:layout_height="@dimen/_90sdp"/>
+
+                </LinearLayout>
+                   <FrameLayout
+                    android:id="@+id/map_frame"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_50sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                <fragment
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:id="@+id/map"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"/>
+
+                </FrameLayout>
+
+              <!--  <com.google.android.gms.maps.MapView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+                    android:id="@+id/mapView"/>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
+</layout>

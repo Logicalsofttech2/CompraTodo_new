@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:context=".ui.loginsignup.VendorSignupFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <LinearLayout
+            android:id="@+id/rel_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/llVerify"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/etRUC"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:background="@drawable/gray_corner"
+                                android:drawablePadding="@dimen/_10sdp"
+                                android:focusable="true"
+                                android:hint="@string/ruc"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:isScrollContainer="true"
+                                android:overScrollMode="always"
+                                android:padding="@dimen/_10sdp"
+                                android:scrollbarStyle="insideInset"
+                                android:scrollbars="vertical"
+                                android:singleLine="false"
+                                android:windowSoftInputMode="stateAlwaysVisible" />
+
+                            <EditText
+                                android:id="@+id/etDNI"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:background="@drawable/gray_corner"
+                                android:drawablePadding="@dimen/_10sdp"
+                                android:focusable="true"
+                                android:hint="@string/dni"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:isScrollContainer="true"
+                                android:overScrollMode="always"
+                                android:padding="@dimen/_10sdp"
+                                android:scrollbarStyle="insideInset"
+                                android:scrollbars="vertical"
+                                android:singleLine="false"
+                                android:windowSoftInputMode="stateAlwaysVisible" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:text="@string/sellertype"
+                                android:textColor="@color/colorPrimary"
+                                android:textStyle="bold" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:orientation="horizontal">
+
+                                <RadioGroup
+                                    android:id="@+id/groupradio"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="3">
+
+                                    <!-- In RadioGroup create the 1 Radio Button-->
+                                    <!-- like this we will add some more Radio Button-->
+                                    <RadioButton
+                                        android:id="@+id/Retail"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/retail"
+                                        android:textSize="@dimen/_16sdp" />
+
+                                    <RadioButton
+                                        android:id="@+id/Wholesale"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/wholesale"
+                                        android:textSize="@dimen/_16sdp" />
+
+                                    <RadioButton
+                                        android:id="@+id/Farmer"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/farmer"
+                                        android:textSize="@dimen/_16sdp" />
+
+                                </RadioGroup>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tvNext"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_20sdp"
+                                android:background="@drawable/currentlocation"
+                                android:padding="@dimen/_10sdp"
+                                android:text="@string/next"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_16sdp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSignup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/_50sdp"
+                        android:visibility="gone">
+
+
+                        <LinearLayout
+                            android:id="@+id/rl_field"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerHorizontal="true"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/card_sign"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/_1sdp"
+                                    android:background="@color/white"
+                                    android:padding="@dimen/_10sdp">
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/_10sdp"
+                                        android:orientation="vertical">
+
+                                        <EditText
+                                            android:id="@+id/et_name"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_10sdp"
+                                            android:background="@drawable/gray_corner"
+                                            android:drawableLeft="@drawable/ic_person"
+                                            android:drawablePadding="@dimen/_10sdp"
+                                            android:focusable="true"
+                                            android:hint="@string/name"
+                                            android:imeOptions="actionNext"
+                                            android:inputType="text"
+                                            android:isScrollContainer="true"
+                                            android:overScrollMode="always"
+                                            android:padding="@dimen/_10sdp"
+                                            android:scrollbarStyle="insideInset"
+                                            android:scrollbars="vertical"
+                                            android:singleLine="false"
+                                            android:windowSoftInputMode="stateAlwaysVisible" />
+
+                                        <EditText
+                                            android:id="@+id/et_email"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_10sdp"
+                                            android:background="@drawable/gray_corner"
+                                            android:drawableLeft="@drawable/ic_mail"
+                                            android:drawablePadding="@dimen/_10sdp"
+                                            android:focusable="true"
+                                            android:hint="@string/emailid"
+                                            android:imeOptions="actionNext"
+                                            android:inputType="textEmailAddress"
+                                            android:isScrollContainer="true"
+                                            android:overScrollMode="always"
+                                            android:padding="@dimen/_10sdp"
+                                            android:scrollbarStyle="insideInset"
+                                            android:scrollbars="vertical"
+                                            android:singleLine="false"
+                                            android:windowSoftInputMode="stateAlwaysVisible" />
+
+
+                                        <EditText
+                                            android:id="@+id/et_password"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_10sdp"
+                                            android:background="@drawable/gray_corner"
+                                            android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+                                            android:drawablePadding="@dimen/_10sdp"
+                                            android:focusable="true"
+                                            android:hint="@string/password"
+                                            android:imeOptions="actionNext"
+                                            android:inputType="textPassword"
+                                            android:isScrollContainer="true"
+                                            android:overScrollMode="always"
+                                            android:padding="@dimen/_10sdp"
+                                            android:scrollbarStyle="insideInset"
+                                            android:scrollbars="vertical"
+                                            android:singleLine="false"
+                                            android:windowSoftInputMode="stateAlwaysVisible" />
+
+                                        <EditText
+                                            android:id="@+id/et_cnfpassword"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_10sdp"
+                                            android:background="@drawable/gray_corner"
+                                            android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+                                            android:drawablePadding="@dimen/_10sdp"
+                                            android:focusable="true"
+                                            android:hint="@string/cnfpassword"
+                                            android:imeOptions="actionNext"
+                                            android:inputType="textPassword"
+                                            android:isScrollContainer="true"
+                                            android:overScrollMode="always"
+                                            android:padding="@dimen/_10sdp"
+                                            android:scrollbarStyle="insideInset"
+                                            android:scrollbars="vertical"
+                                            android:singleLine="false"
+                                            android:windowSoftInputMode="stateAlwaysVisible" />
+
+                                        <EditText
+                                            android:id="@+id/et_phone"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_10sdp"
+                                            android:background="@drawable/gray_corner"
+                                            android:drawableLeft="@drawable/ic_phone"
+                                            android:drawablePadding="@dimen/_10sdp"
+                                            android:focusable="true"
+                                            android:hint="@string/phoneno"
+                                            android:imeOptions="actionGo"
+                                            android:inputType="number"
+                                            android:isScrollContainer="true"
+                                            android:maxLength="10"
+                                            android:overScrollMode="always"
+                                            android:padding="@dimen/_10sdp"
+                                            android:scrollbarStyle="insideInset"
+                                            android:scrollbars="vertical"
+                                            android:singleLine="false"
+                                            android:windowSoftInputMode="stateAlwaysVisible" />
+
+                                        <EditText
+                                            android:id="@+id/et_account"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_10sdp"
+                                            android:background="@drawable/gray_corner"
+                                            android:drawableLeft="@drawable/ic_baseline_bank"
+                                            android:drawablePadding="@dimen/_10sdp"
+                                            android:focusable="true"
+                                            android:hint="@string/account_no"
+                                            android:imeOptions="actionNext"
+                                            android:inputType="text"
+                                            android:isScrollContainer="true"
+                                            android:overScrollMode="always"
+                                            android:padding="@dimen/_10sdp"
+                                            android:scrollbarStyle="insideInset"
+                                            android:scrollbars="vertical"
+                                            android:singleLine="false"
+                                            android:windowSoftInputMode="stateAlwaysVisible" />
+
+                                        <LinearLayout
+                                            android:id="@+id/llHealthCertificate"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_10sdp"
+                                            android:orientation="vertical">
+
+
+                                            <TextView
+                                                android:id="@+id/tv_heathcertificate"
+                                                android:layout_marginTop="@dimen/_2sdp"
+                                                android:layout_marginBottom="@dimen/_5sdp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/heathcertificateimg"/>
+
+                                            <ImageView
+                                                android:id="@+id/ivHealthCertificate"
+                                                android:layout_width="@dimen/_70sdp"
+                                                android:src="@drawable/logo2"
+                                                android:layout_height="@dimen/_90sdp"/>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/llPermit"
+                                            android:visibility="gone"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_10sdp"
+                                            android:orientation="vertical">
+
+
+                                            <TextView
+                                                android:id="@+id/tvPermit"
+                                                android:layout_marginTop="@dimen/_2sdp"
+                                                android:layout_marginBottom="@dimen/_5sdp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="@string/permitimg"/>
+
+                                            <ImageView
+                                                android:id="@+id/ivPermit"
+                                                android:layout_width="@dimen/_70sdp"
+                                                android:src="@drawable/logo2"
+                                                android:layout_height="@dimen/_90sdp"/>
+
+
+                                        </LinearLayout>
+
+
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_20sdp"
+                                            android:layout_marginBottom="@dimen/_10sdp"
+                                            android:orientation="horizontal">
+
+                                            <CheckBox
+                                                android:id="@+id/ch_terms"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content" />
+
+                                            <TextView
+                                                android:id="@+id/tv_terms"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_marginLeft="@dimen/_10sdp"
+                                                android:text="@string/i_agree"
+                                                android:textColor="@color/light_gray" />
+                                        </LinearLayout>
+
+
+                                        <TextView
+                                            android:id="@+id/iv_signUp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_gravity="center"
+                                            android:background="@drawable/currentlocation"
+                                            android:padding="@dimen/_10sdp"
+                                            android:text="@string/submit"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/_16sdp" />
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rl_field"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/ll_login"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/_30sdp">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/you_have"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/tv_login"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:gravity="center"
+                                    android:text="@string/login"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="@dimen/_14sdp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </ScrollView>
+        </LinearLayout>
+    </FrameLayout>
+</layout>
