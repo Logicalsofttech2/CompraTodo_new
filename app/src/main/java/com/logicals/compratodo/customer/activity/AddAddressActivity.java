@@ -105,7 +105,7 @@ public class AddAddressActivity extends AppCompatActivity {
                                 param.put(Consts.ADDRESS_ID,addressListModel.getId());
                                 addAddress(Consts.UPDATEADRESS);
                             }
-
+///////////////////////////condition
 
                             } else {
                             Toast.makeText(AddAddressActivity.this, "Please Login First...", Toast.LENGTH_SHORT).show();
